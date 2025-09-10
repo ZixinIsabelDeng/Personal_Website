@@ -32,11 +32,11 @@ export default function ProjectShowcase() {
       tech: ["python", "Pandas", "Scikit-learn", "data preprosessing", "ML"],
     },
     {
-      title: "Sesame Cake (Ongoing))",
+      title: "Sesame Cake (Ongoing)",
       description:
         "A lightweight, configurable pipeline that moves data between Elasticsearch and S3, applies optional record/batch transforms (including API enrichment), and runs under Airflow—built for parallelism, idempotent loads, retries, and basic metrics.",
       image: "/images/sesa.png",
-      link: "https://github.com/ZixinIsabelDeng/portfolio",
+      link: "https://github.com/ZixinIsabelDeng/Sesame_Cake",
       tech: ["python", "Opensearch", "S3", "Airflow"],
     },
     {
