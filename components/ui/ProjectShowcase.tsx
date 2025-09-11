@@ -34,7 +34,7 @@ export default function ProjectShowcase() {
     {
       title: "Sesame Cake (Ongoing)",
       description:
-        "A lightweight, configurable pipeline that moves data between Elasticsearch and S3, applies optional record/batch transforms (including API enrichment), and runs under Airflow—built for parallelism, idempotent loads, retries, and basic metrics.",
+        "A lightweight, configurable ETL pipeline framework that moves data between Elasticsearch and S3, applies optional record/batch transforms (including API enrichment), and runs under Airflow—built for parallelism, idempotent loads, retries, and basic metrics.",
       image: "/images/sesa.png",
       link: "https://github.com/ZixinIsabelDeng/Sesame_Cake",
       tech: ["python", "Opensearch", "S3", "Airflow"],
@@ -61,7 +61,7 @@ export default function ProjectShowcase() {
         "A research project that evaluates 43 popular social media apps/sites for security and privacy weaknesses using static and dynamic analysis, documenting issues like broken auth, plaintext data transmission, injection risks, and CORS/CSRF problems, with practical mitigation recommendations.",
       image: "/images/security.png",
       link: "https://github.com/ZixinIsabelDeng/security_analysis_of_social_media_app",
-      tech: ["penatration test", "Dynamic scanning"],
+      tech: ["penatration test", "Burp Suite"],
     },
     {
       title: "Personal Website",
