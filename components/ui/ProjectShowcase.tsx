@@ -28,7 +28,7 @@ export default function ProjectShowcase() {
       description:
         "A tool that analyzes newly listed companies and predicts the chance they’ll be delisted within the next five quarters, with results presented for monitoring and comparison.",
       image: "/images/ipo.png",
-      link: "https://github.com/ZixinIsabelDeng/Predicting-the-Delisting-of-an-IPO-Company-Within-the-Next-Five-Quarters",
+      link: "https://github.com/ZixinIsabelDeng/Ipo_delisting_prediction",
       tech: ["Python", "Pandas", "Scikit-learn", "data preprosessing", "ML"],
     },
     {
