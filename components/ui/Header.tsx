@@ -1,7 +1,13 @@
 "use client";
 import Link from "next/link";
+import { Dispatch, SetStateAction } from "react";
 
-export default function Header() {
+interface HeaderProps {
+  lang: "en" | "zh" | "fr";
+  setLang: Dispatch<SetStateAction<"en" | "zh" | "fr">>;
+}
+
+export default function Header({ lang, setLang }: HeaderProps) {
   return (
     <div className="container-page mt-4">
       <header
@@ -16,6 +22,15 @@ export default function Header() {
           ZIXIN DENG (AKA. ISABEL)
         </div>
         <nav className="flex gap-10 text-[14px]">
+          <select
+            value={lang}
+            onChange={(e) => setLang(e.target.value as "en" | "zh" | "fr")}
+            className="border rounded px-2 py-1"
+          >
+            <option value="en">EN</option>
+            <option value="zh">中文</option>
+            <option value="fr">FR</option>
+          </select>
           <Link href="/#projects" scroll>
             PROJECTS
           </Link>

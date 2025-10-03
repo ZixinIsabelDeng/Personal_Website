@@ -18,17 +18,19 @@ const abel = Abel({
 });
 export default function Home() {
   const [showTimeline, setShowTimeline] = useState(false);
+  const [lang, setLang] = useState<"en" | "zh" | "fr">("en");
 
   return (
     <>
-      <Header />
+      <Header lang={lang} setLang={setLang} />
 
       <main className="container-page">
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-4 auto-rows-auto">
-          {/*  </section> <section className="grid grid-rows-12 grid-cols-2 md:grid-cols-12 gap-4 auto-rows-[10px] md:h-[800px]"> */}
-
           {/* Slogan card (unchanged) */}
-          <SloganCard className="row-span-4 md:row-span-7 col-span-2 md:col-span-4" />
+          <SloganCard
+            className="row-span-4 md:row-span-7 col-span-2 md:col-span-4"
+            lang={lang}
+          />
 
           {/* Portrait card (unchanged) */}
           <PortraitCard className="row-span-12 md:row-span-7 col-span-2 md:col-span-3" />
@@ -84,7 +86,9 @@ export default function Home() {
           </div>
 
           {/* Bottom row (unchanged) */}
+
           <AboutIntro
+            lang={lang}
             className="row-span-14 md:row-span-5 col-span-2 md:col-span-4"
             fontClass={abel.className}
           />
