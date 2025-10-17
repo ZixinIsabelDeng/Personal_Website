@@ -131,7 +131,7 @@ export default function Home() {
           <ProjectShowcase lang={lang} />
         </section>
         <section id="contact" className="scroll-mt-[50px]">
-          <ContactSection />
+          <ContactSection lang={lang} />
         </section>
       </main>
     </>
