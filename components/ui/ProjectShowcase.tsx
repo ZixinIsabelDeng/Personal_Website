@@ -68,7 +68,7 @@ export default function ProjectShowcase() {
       description:
         "A personal website built with Next.js, Tailwind CSS, and HeroUI. It showcases my work and acts as a digital CV.",
       image: "/images/web.png",
-      link: "https://github.com/ZixinIsabelDeng/security_analysis_of_social_media_app",
+      link: "https://github.com/ZixinIsabelDeng/Personal_Website",
       tech: ["Typescript", "Next.js", "TailwindCSS", "HeroUI"],
     },
   ];
