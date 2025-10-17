@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { Accordion, AccordionItem } from "@heroui/accordion";
 import Header from "@/components/ui/Header";
-import Image from "next/image";
 import ResumeTimeline from "@/components/ui/ResumeTimeline";
 import TechStackPanel from "@/components/ui/TechStackPanel";
 import ProjectShowcase from "@/components/ui/ProjectShowcase";
@@ -17,7 +16,7 @@ const abel = Abel({
   weight: "400",
 });
 export default function Home() {
-  const [showTimeline, setShowTimeline] = useState(false);
+  const [, setShowTimeline] = useState(false);
   const [lang, setLang] = useState<"en" | "zh" | "fr">("en");
 
   return (
@@ -129,7 +128,7 @@ export default function Home() {
           </div>
         </section>
         <section id="projects" className="scroll-mt-[50px]">
-          <ProjectShowcase />
+          <ProjectShowcase lang={lang} />
         </section>
         <section id="contact" className="scroll-mt-[50px]">
           <ContactSection />
